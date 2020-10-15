@@ -1,0 +1,23 @@
+{
+  "name": "sweetwedding",
+  "version": "1.0.0",
+  "description": "sweetwedding.top",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sweetwedding"
+  ],
+  "author": "hieuht",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^5.0.0"
+  }
+}

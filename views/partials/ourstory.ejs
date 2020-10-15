@@ -1,0 +1,30 @@
+<!-- section -->
+<section id="ourstory" class="gla_section gla_image_bck" data-color="#fafafd">
+    <div class="container ourstory text-center">
+        <p><img src="static/images/animations/flower5.gif"
+                data-bottom-top="@src:static/images/animations/flower5.gif; opacity:1" class="gla_animated_flower"
+                height="150" alt="flower5"></p>
+        <h2>Our Story</h2>
+        <p>Trải qua 2 năm tìm hiểu nhau, chúng tôi hạnh phúc thông báo rằng một hôn lễ ngọt ngào sẽ được diễn ra. Cảm ơn
+            hai bên gia đình, bạn bè luôn ủng hộ và chúc phúc cho chúng tôi.</p>
+        <!-- Love it start -->
+        <% if (messageId > 0) { 
+        if(loveitReceived == 1){%>
+        <p><button title="Love it" class="btn-loveit btn-counter active" disabled data-count="<%=loveitReceived%>"
+                data-text="Bạn đã thích câu chuyện này."><span>&#x2764;</span> Love it</span></p>
+        <%} else {%>
+        <p><button title="Love it" class="btn-loveit btn-counter active" disabled data-count="<%=loveitReceived%>"
+                data-text="Bạn và <%=loveitReceived - 1%> người khác đã thích câu chuyện này."><span>&#x2764;</span> Love it</span></p>
+        <%}
+            } else if(loveitReceived > 0) { %>
+        <p><button title="Love it" class="btn-loveit btn-counter" data-count="<%=loveitReceived%>"
+                data-text="<%=loveitReceived%> người đã thích câu chuyện này."><span>&#x2764;</span> Love it</button></p>
+        <% } else { %>
+        <p><button title="Love it" class="btn-loveit btn-counter" data-count="<%=loveitReceived%>"
+                data-text="0"><span>&#x2764;</span> Love it</button></p>
+        <% } %>
+        <!-- Love it end -->
+    </div>
+    <!-- container end -->
+</section>
+<!-- section end -->

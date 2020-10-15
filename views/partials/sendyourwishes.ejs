@@ -1,0 +1,57 @@
+<!-- section -->
+<section id="sendyourwishes" class="gla_section gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.4"
+    data-image="static/images/wedding/14630573088_e3cb39d65b_k.jpg"
+    style="background-image: url(&quot;static/images/wedding/14630573088_e3cb39d65b_k.jpg&quot;); background-attachment: fixed; background-position: 50% 16.4px;">
+    <!-- Over -->
+    <div class="gla_over" data-color="#282828" data-opacity="0.4"
+        style="background-color: rgb(40, 40, 40); opacity: 0.4;"></div>
+    <div class="container text-center">
+        <h2>Send your wishes</h2>
+        <h3 class="gla_subtitle">Gửi lời chúc mừng hạnh phúc.</h3>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="gla_icon_box col-md-4" style="transition-delay: 0s;">
+                    <div class="gla_icon_box_content">
+                        <h4><strong class="gla_timer messages"><%= wishesReceived %></strong> lời chúc.</h4>
+                    </div>
+                </div>
+                <div class="col-md-8 message-content">
+                    <div id="show_messages" class="widget text-left">
+                        <h6 class="title">Lời chúc gần đây:</h6>
+                        <% listWishes.forEach((data) => { %>
+                        <div class="gla_post_item" style="margin-bottom:10px;">
+                            <div class="gla_post_title">
+                                <h3><%= data.FullName%></h3>
+                            </div>
+                            <p>
+                                <%= data.MessageContent%>
+                            </p>
+                        </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 text-left">
+                <form id="f5iq5m0po3" class="validate-form">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label></label>
+                            <input type="text" name="fullname" placeholder="Họ và tên" autocomplete="off"
+                                class="form-control form-opacity">
+                        </div>
+                        <div class="col-md-12">
+                            <label></label>
+                            <textarea name="message" placeholder="Lời chúc"
+                                class="form-control form-opacity mb0"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <input type="submit" class="btn submit" value="Gửi">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- container end -->
+</section>
+<!-- section end -->

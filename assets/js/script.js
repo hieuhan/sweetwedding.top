@@ -777,7 +777,7 @@
     });
 
     socket.on("refresh loveit", function (res) {
-      if(res.completed){
+      if (res.completed) {
         $('.btn-counter').attr('data-count', res.count).attr('data-text', res.text).prop('disabled', true);
       }
     });
